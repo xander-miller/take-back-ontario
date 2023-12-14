@@ -2,6 +2,16 @@
   "extends": "astro/tsconfigs/base",
   "compilerOptions": {
     "jsx": "react-jsx",
-    "jsxImportSource": "react"
+    "jsxImportSource": "react",
+    "paths": {
+      // https://docs.astro.build/en/guides/aliases/
+      "@assets/*": ["src/assets/*"],
+      "@components/*": ["src/components/*"],
+      "@config/*": ["config/*"],
+      "@layouts/*": ["src/layouts/*"],
+      "@lib/*": ["lib/*"],
+      "@scripts/*": ["scripts/*"],
+      "@styles/*": ["src/styles/*"],
+    }
   }
 }
