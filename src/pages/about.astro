@@ -1,77 +1,80 @@
 ---
-import Layout from '../layouts/Layout.astro'
-import Card from '../components/Card.astro'
+import SubPage from "../layouts/SubPage.astro";
 ---
 
-<Layout title="Take Back Ontario - Home">
+<SubPage title="Take Back Ontario - Home">
   <main>
     <h1>About</h1>
-    <h2>WHO WE ARE</h2>
+    <div class="main-content">
+      <h2>WHO WE ARE</h2>
 
-    <p>
-      Inspired by David Parker’s success with Take Back Alberta. Xander Miller
-      founded Take Back Ontario in 2023. Take Back Ontario (TBO) is a grassroots
-      movement focused on transferring power and responsibility from the ruling
-      elite to the people of the province of Ontario.
-    </p>
+      <p>
+        Inspired by David Parker’s success with Take Back Alberta. Xander Miller
+        founded Take Back Ontario in 2023. Take Back Ontario (TBO) is a
+        grassroots movement focused on transferring power and responsibility
+        from the ruling elite to the people of the province of Ontario.
+      </p>
 
-    <p>
-      TBO is a growing network of freedom loving Ontarians from all walks of
-      life who seek truth and are willing to take responsibility for their
-      freedom and their family’s freedom.
-    </p>
+      <p>
+        TBO is a growing network of freedom loving Ontarians from all walks of
+        life who seek truth and are willing to take responsibility for their
+        freedom and their family’s freedom.
+      </p>
 
-    <p>
-      The grassroot volunteers of TBO understand that there is no freedom
-      without the discipline to show up and be engaged. We proactively enable
-      Ontarians to be engaged in all levels of government. The world is run by
-      those who show up.
-    </p>
+      <p>
+        The grassroot volunteers of TBO understand that there is no freedom
+        without the discipline to show up and be engaged. We proactively enable
+        Ontarians to be engaged in all levels of government. The world is run by
+        those who show up.
+      </p>
 
-    <h2 class="text-xl text-red">WHAT WE DO</h2>
+      <h2 class="text-xl text-red">WHAT WE DO</h2>
 
-    <p>
-      We are all about activating and empowering the grassroots of Ontario.
-      Whether it’s a small gathering of like-minded friends in your garage or
-      thousands in a ballroom. Take Back Ontario (TBO) is a growing voice,
-      speaking truth, for freedom.
-    </p>
+      <p>
+        We are all about activating and empowering the grassroots of Ontario.
+        Whether it’s a small gathering of like-minded friends in your garage or
+        thousands in a ballroom. Take Back Ontario (TBO) is a growing voice,
+        speaking truth, for freedom.
+      </p>
 
-    <p>
-      The mission of TBO is to restore accountability to our democratic system
-      through education that results in engagement and action.
-    </p>
+      <p>
+        The mission of TBO is to restore accountability to our democratic system
+        through education that results in engagement and action.
+      </p>
 
-    <span>We do this in the following ways:</span>
-    <ul>
-      <li>Empowering Ontarians to be proactive and engaged.</li>
+      <span>We do this in the following ways:</span>
+      <ul class="list-disc list-inside	">
+        <li>Empowering Ontarians to be proactive and engaged.</li>
 
-      <li>Building a grassroots network of organizers.</li>
+        <li>Building a grassroots network of organizers.</li>
 
-      <li>Hosting monthly meetings</li>
+        <li>Hosting monthly meetings</li>
 
-      <li>Providing educational speakers</li>
+        <li>Providing educational speakers</li>
 
-      <li>Discussing topical issues</li>
-    </ul>
+        <li>Discussing topical issues</li>
+      </ul>
 
-    <h2>WHY WE ARE DIFFERENT</h2>
-    <p>
-      For too long, Ontario's rent seeking elite have taken advantage of
-      everyday people, thriving on political apathy, censoring those with the
-      courage to speak out, and exploiting the power of big government to
-      restrict our freedoms.
-    </p>
+      <h2>WHY WE ARE DIFFERENT</h2>
+      <p>
+        For too long, Ontario's rent seeking elite have taken advantage of
+        everyday people, thriving on political apathy, censoring those with the
+        courage to speak out, and exploiting the power of big government to
+        restrict our freedoms.
+      </p>
 
-    <p>Not anymore.</p>
+      <p>Not anymore.</p>
 
-    <p>
-      It's time for everyday people to show up, take responsibility and demand
-      better from our leaders, hold them accountable and, when necessary,
-      replace them.
-    </p>
+      <p>
+        It's time for everyday people to show up, take responsibility and demand
+        better from our leaders, hold them accountable and, when necessary,
+        replace them.
+      </p>
 
-    <p>That's what Take Back Ontario (TBO) is all about.</p>
+      <p>That's what Take Back Ontario (TBO) is all about.</p>
+      <a class="btn my-8" href="https://signup.takebackontario.ca">Join Us</a>
+
+    </div>
   </main>
 </Layout>
 
@@ -79,18 +82,18 @@ import Card from '../components/Card.astro'
   main {
     margin: auto;
     padding: 1rem;
-    width: 800px;
+    width: 1200px;
     max-width: calc(100% - 2rem);
     color: black;
     font-size: 20px;
     line-height: 1.6;
   }
   h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 700;
     line-height: 1;
     text-align: left;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
   }
 
   h2 {
@@ -98,7 +101,7 @@ import Card from '../components/Card.astro'
     font-weight: 700;
     line-height: 1;
     text-align: left;
-	margin-top: 1.0em;
+    margin-top: 1em;
     margin-bottom: 0.5em;
   }
 </style>

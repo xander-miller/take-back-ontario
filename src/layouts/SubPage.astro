@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import qpBackground from '../assets/queens-park-background.jpg';
+import tboLogo from '../assets/tbo-logo.webp';
 
 interface Props {
 	title: string;
@@ -20,6 +21,11 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
+    <div class="top-bar">
+      <a href="/">
+        <Image src={tboLogo} alt="Take Back Ontario Logo" class="subpage-logo" />
+      </a>
+    </div>
 		<Image src={qpBackground} alt="Queen's Park Background" class="qp-background" />
 		<slot />
 	</body>
@@ -54,5 +60,26 @@ const { title } = Astro.props;
 		display: block;
 		width: 190px;
 		text-align: center;
+	}
+  .subpage-logo {
+    position: relative;
+    height: 100%;   
+    width: auto; 
+    max-width: 200px;
+    padding: 1em;
+  }
+  .top-bar {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 1;
+    border-bottom: 1px solid #d0d0d0;
+  }
+  p {
+		padding-bottom: 1em;
 	}
 </style>

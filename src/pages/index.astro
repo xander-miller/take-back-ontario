@@ -3,29 +3,27 @@ import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
 import tboLogo from '../assets/tbo-logo.webp';
 
-
 ---
 
 <Layout title="Take Back Ontario - About">
 	<main>
 		<Image src={tboLogo} alt="Take Back Ontario Logo" class="" />
 		<h1 class="text-black my-10">IT’S YOUR PROVINCE. TAKE IT BACK.</h1>
-		<p class="text-black">For too long, Ontario's rent seeking elite have taken advantage of everyday people, thriving on political apathy, censoring those with the courage to speak out, and exploiting the power of big government to restrict our freedoms.</p>
-		<a class="btn my-8" href="/about">Learn More</a>
+		<p class="text-black main-content">For too long, Ontario's rent seeking elite have taken advantage of everyday people, thriving on political apathy, censoring those with the courage to speak out, and exploiting the power of big government to restrict our freedoms.</p>
+		<div class="buttons">
+			<a class="btn my-8" href="/about">Learn More</a>
+			<a class="btn my-8" href="/events">Events</a>
+			<a class="btn my-8" href="https://signup.takebackontario.ca">Join Us</a>
+		</div>
 	</main>
 </Layout>
 
 <style>
-	.btn {
-		background-color: #ed2228;
-		color: #fff;
-		padding: 1rem 2rem;
-		border-radius: 8px;
-		font-size: 1.5rem;
-		font-weight: 700;
-		text-decoration: none;
-		display: inline-block;
+	.buttons {
+		display: flex;
+		justify-content: space-around;
 	}
+
 	main {
 		margin: auto;
 		padding: 1rem;
